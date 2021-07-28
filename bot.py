@@ -1,6 +1,12 @@
 from telethon import TelegramClient, events, Button
 from download_from_url import download_file, get_size
 from file_handler import send_to_transfersh_async, progress
+from telethon.sync import TelegramClient 
+from telethon import events
+import os
+from zipfile import ZipFile,ZIP_DEFLATED
+from uuid import uuid4
+from os import environ
 import os
 import time
 import datetime
